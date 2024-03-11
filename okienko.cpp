@@ -6,10 +6,18 @@ okienko::okienko()
 {
 }
 
+okienko::okienko(int numer_opcji)
+{
+    // na przyszlosc
+}
 okienko::~okienko()
 {
 }
-
+int okienko::koordynacja()
+{
+    pokazuj_strzalke_dopki_nie_bedzie_wybrana_opcja();
+    return opcja_okna; // zwraca dalje do funkcji aby stwierdzic jaka pozniej opcja
+}
 void okienko::pokaz_okno()
 {
     std::cout << okno << std::endl;
@@ -28,7 +36,6 @@ void okienko::pokazuj_strzalke_dopki_nie_bedzie_wybrana_opcja()
 {
     wykieruj_strzalke(0, 0);
     char input = '\0';
-    pokaz_okno();
     while (input != '\r')
     {
 
@@ -56,11 +63,13 @@ void okienko::pokazuj_strzalke_dopki_nie_bedzie_wybrana_opcja()
         {
             if (opcja_okna == 2)
             {
-                exit(0);
+                system("cls");
+                break;
             }
             else
             {
-                exit(0);
+                system("cls");
+                return;
             }
         }
     }

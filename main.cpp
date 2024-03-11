@@ -5,6 +5,6 @@ using namespace ::std;
 
 int main()
 {
-    okienko number1;
-    number1.pokazuj_strzalke_dopki_nie_bedzie_wybrana_opcja(); //! sprawzd a.exe statkow zeby nie zacinalo
+    APP aplication1;
+    aplication1.koordynacja_calego_programu_main_v2();
 }

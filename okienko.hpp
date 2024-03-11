@@ -1,3 +1,6 @@
+#ifndef OKIENKO_class
+#define OKIENKO_class
+
 #include <string>
 
 class okienko
@@ -31,9 +34,13 @@ private:
     int *pozycje_znaczka = new int[3]{454, 690, 926};
 
 public:
+    int koordynacja();
     void pokaz_okno();
     void pokazuj_strzalke_dopki_nie_bedzie_wybrana_opcja();
     void wykieruj_strzalke(int dawna_opcja_okna, int terazneijsza_opcja_okna);
     okienko(/* args */);
+    okienko(int);
     ~okienko();
 };
+
+#endif
