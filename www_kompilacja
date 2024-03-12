@@ -1,1 +1,1 @@
-g++ main.cpp okienko.cpp APP.cpp TzapisNowegoUzytkownika.cpp
+g++ main.cpp okienko.cpp APP.cpp TzapisNowegoUzytkownika.cpp  TwyszukajStaregoUzytkownika.cpp

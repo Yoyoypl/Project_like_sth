@@ -2,6 +2,7 @@
 #define OKIENKO_class
 
 #include <string>
+class APP;
 
 class okienko
 {
@@ -41,6 +42,8 @@ public:
     okienko(/* args */);
     okienko(int);
     ~okienko();
+
+    friend class APP;
 };
 
 #endif

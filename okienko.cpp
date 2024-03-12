@@ -61,16 +61,8 @@ void okienko::pokazuj_strzalke_dopki_nie_bedzie_wybrana_opcja()
         }
         if (input == '\r')
         {
-            if (opcja_okna == 2)
-            {
-                system("cls");
-                break;
-            }
-            else
-            {
-                system("cls");
-                return;
-            }
+            system("cls");
+            return;
         }
     }
 }
