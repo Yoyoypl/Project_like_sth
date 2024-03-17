@@ -4,7 +4,7 @@
 #include <string>
 class APP;
 
-class okienko
+class Tokienko
 {
 private:
     std::string okno = R"(
@@ -39,9 +39,9 @@ public:
     void pokaz_okno();
     void pokazuj_strzalke_dopki_nie_bedzie_wybrana_opcja();
     void wykieruj_strzalke(int dawna_opcja_okna, int terazneijsza_opcja_okna);
-    okienko(/* args */);
-    okienko(int);
-    ~okienko();
+    Tokienko(/* args */);
+    Tokienko(int);
+    ~Tokienko();
 
     friend class APP;
 };

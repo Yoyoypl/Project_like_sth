@@ -1,14 +1,14 @@
 #ifndef APP_class
 #define APP_class
 
-#include "okienko.hpp"
+#include "Tokienko.hpp"
 #include "TzapisNowegoUzytkownika.hpp"
 #include "TwyszukajStaregoUzytkownika.hpp"
 
 class APP
 {
 private:
-    okienko *interfejs;
+    Tokienko *interfejs;
     TzapisNowegoUzytkownika *zapis;
     TwyszukajStaregoUzytkownika *odczyt;
 

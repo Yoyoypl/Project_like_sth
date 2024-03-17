@@ -1,29 +1,29 @@
-#include "okienko.hpp"
+#include "Tokienko.hpp"
 #include <iostream>
 #include <conio.h>
 
-okienko::okienko()
+Tokienko::Tokienko()
 {
 }
 
-okienko::okienko(int numer_opcji)
+Tokienko::Tokienko(int numer_opcji)
 {
     // na przyszlosc
 }
-okienko::~okienko()
+Tokienko::~Tokienko()
 {
 }
-int okienko::koordynacja()
+int Tokienko::koordynacja()
 {
     pokazuj_strzalke_dopki_nie_bedzie_wybrana_opcja();
     return opcja_okna; // zwraca dalje do funkcji aby stwierdzic jaka pozniej opcja
 }
-void okienko::pokaz_okno()
+void Tokienko::pokaz_okno()
 {
     std::cout << okno << std::endl;
 }
 
-void okienko::wykieruj_strzalke(int dawna_opcja_okna, int terazneijsza_opcja_okna)
+void Tokienko::wykieruj_strzalke(int dawna_opcja_okna, int terazneijsza_opcja_okna)
 {
     okno[pozycje_znaczka[dawna_opcja_okna]] = ' ';
     okno[pozycje_znaczka[terazneijsza_opcja_okna]] = znaczek;
@@ -32,9 +32,9 @@ void okienko::wykieruj_strzalke(int dawna_opcja_okna, int terazneijsza_opcja_okn
     pokaz_okno(); //! tutaj zeby sie nie zacinalo prz spamie
 }
 
-void okienko::pokazuj_strzalke_dopki_nie_bedzie_wybrana_opcja()
+void Tokienko::pokazuj_strzalke_dopki_nie_bedzie_wybrana_opcja()
 {
-    wykieruj_strzalke(0, 0);
+    wykieruj_strzalke(opcja_okna, opcja_okna);
     char input = '\0';
     while (input != '\r')
     {

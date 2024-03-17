@@ -9,6 +9,7 @@ TwyszukajStaregoUzytkownika::TwyszukajStaregoUzytkownika()
 
 TwyszukajStaregoUzytkownika::~TwyszukajStaregoUzytkownika()
 {
+    str_szukania_uzytkownika.close();
 }
 
 bool TwyszukajStaregoUzytkownika::Wyszukaj_uztykownika(std::string e_mail, std::string haslo)
@@ -17,11 +18,12 @@ bool TwyszukajStaregoUzytkownika::Wyszukaj_uztykownika(std::string e_mail, std::
     while (true)
     {
         getline(str_szukania_uzytkownika, linijka);
+
         if (!str_szukania_uzytkownika)
         {
             break;
         }
-        if (linijka.find(e_mail))
+        if (linijka == e_mail)
         {
             getline(str_szukania_uzytkownika, linijka);
             if (linijka == haslo)

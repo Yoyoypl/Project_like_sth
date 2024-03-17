@@ -1,3 +1,7 @@
-#include "okienko.hpp"
+#include "Tokienko.hpp"
 #include "APP.hpp"
 #include "TzapisNowegoUzytkownika.hpp"
+#include "TwyszukajStaregoUzytkownika.hpp"
+#include "Tstrona_glowna.hpp"
+#include "Todczyt_do_all.hpp"
+#include "Tzapis_do_all.hpp"
