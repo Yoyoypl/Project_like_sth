@@ -1,9 +1,9 @@
 #ifndef APP_class
 #define APP_class
 
-#include "Tokienko.hpp"
-#include "TzapisNowegoUzytkownika.hpp"
-#include "TwyszukajStaregoUzytkownika.hpp"
+#include "Tokienko//Tokienko.hpp"
+#include "TzapisNowegoUzytkownika//TzapisNowegoUzytkownika.hpp"
+#include "TwyszukajStaregoUzytkownika//TwyszukajStaregoUzytkownika.hpp"
 
 class APP
 {

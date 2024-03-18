@@ -7,7 +7,7 @@
 class TzapisNowegoUzytkownika
 {
 private:
-    std::string nazwa_pliku{"lista_uzytkownikow.txt"};
+    std::string nazwa_pliku{"C:\\Users\\lucia\\Desktop\\ALL\\Gry-moje\\Gra_facebook\\test\\lista_uzytkownikow.txt"};
     std::ofstream str_zapisz{nazwa_pliku, std::ios::out | std::ios::app};
 
 public:

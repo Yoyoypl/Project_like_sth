@@ -7,7 +7,7 @@
 class TwyszukajStaregoUzytkownika
 {
 private:
-    std::string nazwa_pliku{"lista_uzytkownikow.txt"};
+    std::string nazwa_pliku{"C:\\Users\\lucia\\Desktop\\ALL\\Gry-moje\\Gra_facebook\\test\\lista_uzytkownikow.txt"};
     std::ifstream str_szukania_uzytkownika{nazwa_pliku, std::ios::in};
 
 public:
